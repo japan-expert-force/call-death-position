@@ -4,4 +4,4 @@
 #
 # @within tag/function minecraft:tick
 
-# execute as @a[score={cdp_death=1..}] run
+execute as @a[scores={cdp_death_count=1..,cdp_health=1..}] run function call-death-position:on_death/
